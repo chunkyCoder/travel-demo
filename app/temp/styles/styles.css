@@ -581,8 +581,15 @@ a {
     }
 
 .page-section--testimonials {
-        background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
-        background-size: cover;
+        background-color: #e0e6ef;
+    }
+
+@media (min-width: 800px) {
+
+.page-section--testimonials {
+            background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
+            background-size: cover
+    }
     }
 
 .wrapper {
@@ -606,6 +613,19 @@ a {
 
 .wrapper--b-margin {
             margin-bottom: 3.875rem
+    }
+    }
+
+.wrapper--no-padding-until-medium {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+@media (min-width: 800px) {
+
+.wrapper--no-padding-until-medium {
+            padding-left: 18px;
+            padding-right: 18px
     }
     }
 
@@ -690,9 +710,21 @@ a {
         padding-right: 100px;
     }
 
+.row--gutters-small {
+        margin-right: -45px;
+    }
+
+.row--gutters-small > div {
+        padding-right: 45px;
+    }
+
+.row--t-padding {
+        padding-top: 80px;
+    }
+
 .row__b-margin-until-medium {
             margin-bottom: 1rem;
-        }
+    }
 
 @media (min-width: 800px) {
         
@@ -723,6 +755,24 @@ a {
           width: 63%;  
         }
     }
+
+/* Begin Equal Height Rule */
+
+@media (min-width: 800px) {
+
+.row--equal-height-at-medium {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+    }
+    }
+
+.row--equal-height-at-medium > div {
+            float: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
 
 .generic-content-container p {
         font-weight: 300;
@@ -825,8 +875,23 @@ a {
 
 .testimonial {
     background-color: rgba(255, 255, 255, .8);
-    padding: 0 1.81rem 1px 1.81rem;
+    padding: 0 18px 1px 18px;
+    margin-bottom: 98px;
+    
 }
+
+@media (min-width: 800px) {
+
+.testimonial {
+        margin-bottom: 0;
+        padding: 0 1.81rem 1px 1.81rem
+    
+}
+    }
+
+.testimonial--last {
+        margin-bottom: 0;
+    }
 
 .testimonial__photo {
         border-radius: 80px;
